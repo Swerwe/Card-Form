@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div class="scene">
+    <div class="card">
+        <div class="card__face card__face--front">
+            <div class="company r"></div>
+            <div class="card__face--number"></div>
+            <div class="card__face--date">MM/YY</div>
+            <label class="card__face--name">FULL NAME</label>
+        </div>
+        <div class="card__face card__face--back">
+            <span id="blackline"></span>
+            <label class="card__face--back--cvv"></label>
+            <label id="cvvrectangle"></label>
+
+        </div>
+    </div>
+</div>
+<div class="inputsarea">
+    <div class="input-container">
+        <input class="inputs__number" type="text" required="" maxlength="19"/>
+        <label>Card Number</label>
+    </div>
+    <div class="input-container">
+        <input class="inputs__holder" type="mail" required="" maxlength="25"/>
+        <label>Card Holder</label>
+    </div>
+    <div class="input-container" style="width: 100px">
+        <input class="inputs__cvv" type="mail" required="" maxlength="3"/>
+        <label>CVV</label>
+    </div>
+
+    <select id="MM" class="date" >
+        <option value disabled="disabled" selected="selected">Month</option>
+    </select>
+    <select id="YY" class="date">
+        <option value disabled="disabled" selected="selected">Year</option>
+    </select>
+    <button type="button" class="submit">Submit</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

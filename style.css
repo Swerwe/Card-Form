@@ -1,0 +1,257 @@
+body {
+    font-family: sans-serif;
+
+}
+
+.scene {
+    margin-left: auto;
+    margin-right: auto;
+    width: 645px;
+    height: 405px;
+    margin-top: 240px;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+    transition-duration: 1000ms;
+}
+
+.card__face {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background-color: rgb(18,17,34);
+    background-size: 40%;
+}
+
+.card__face--back {
+    background-color: rgb(18,17,34);
+    transform: rotateY(180deg);
+    transition-duration: 1.5s;
+}
+.inputsarea{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 70px;
+    width: 600px;
+    height: 300px;
+
+}
+.inputs__number{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding-top: 30px;
+}
+.inputs__holder{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+.inputs__cvv{
+    width: 29px;
+}
+
+.card__face--number{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    top:100px;
+    left: 55px;
+    right: auto;
+    display: inline;
+}
+.card__face--number--digit{
+
+    margin-left: 10px;
+    max-width: 10px;
+    max-height: 25px;
+    font-size: 25px;
+    transition: opacity 100ms;
+
+}
+.card__face--number--tab{
+    margin-left: 50px;
+    width: 10px;
+    height: 15px;
+
+}
+.card__face--number--digit--up{
+    margin-left: 10px;
+    max-width: 10px;
+    max-height: 25px;
+    font-size: 25px;
+    opacity: 0%;
+
+}
+.card__face--name{
+    position: absolute;
+    width: 450px;
+    height: 80px;
+    text-align:left;
+    font-size: 20px;
+    vertical-align: sub;
+    top:210px;
+    left: 40px;
+    color: white;
+}
+.card__face--back--cvv{
+    z-index: 2;
+    position: absolute;
+    color: rgb(18,17,34);
+    word-wrap: inherit;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+
+}
+#blackline{
+    position: absolute;
+    width: 100%;
+    top:35px;
+    left: 0px;
+    height: 70px;
+    background:  black;
+}
+#cvvrectangle{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    top:150px;
+    left: 37px;
+    background-color: white;
+
+}
+.card__face--date{
+    text-align: left;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    left: 490px;
+    top:210px;
+
+}
+.date{
+    width: 100px;
+    text-align: left;
+    outline-width: 1px;
+
+    outline-color: rgba(95,168,211,0.6);
+    border-color: rgba(127,127,127,0.6) ;
+    border-width: 1px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color:white;
+    margin-right: auto;
+    margin-left: 10px;
+    height: 47px;
+}
+
+
+.text-center{
+    color:#fff;
+    text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.input-container{
+
+    position:relative;
+    margin-left: 15%;
+    margin-bottom:25px;
+}
+#MM{
+    margin-left: 14%;
+
+}
+#YY{
+
+}
+.input-container label{
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color:black;
+    pointer-events:none;
+    transition: all 0.5s ease-in-out;
+}
+.input-container input{
+    border:0;
+    border-bottom:1px solid #555;
+    background:transparent;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:black;
+}
+.input-container input:focus{
+    border:none;
+    outline:none;
+    border-bottom:1px solid #5fa8d3;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    top:-12px;
+    font-size:12px;
+
+}
+.submit{
+    background-color: #5fa8d3;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.company{
+    margin-top: 35px;
+    margin-left: 72%;
+    width: 150px;
+    height: 80px;
+}
+.visa{
+    background-image: url("visa.png");
+    width: 138px;
+    height: 45px;
+    background-size: contain;
+
+}
+.mastercard{
+    background-image: url("mastercard.png");
+    background-size: 100% 100%;
+    width: 120px;
+    height: 90px;
+
+}
+
