@@ -1,3 +1,3 @@
 # Card-Form
-Interactive credit cart form
+Interactive credit card form
 demo: https://codepen.io/swerwe/pen/BarvNjN
